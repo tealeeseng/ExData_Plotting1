@@ -17,9 +17,10 @@ with(rows, points(y=Sub_metering_2, x= Datestamp, col="red", type="l"))
 with(rows, points(y=Sub_metering_3, x= Datestamp, col="blue", type="l"))
 legend("topright", col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lwd=1)
 
-
+#2 new graphs
 with(rows, plot(x=Datestamp,y=Voltage, type = "l", xlab="datetime", ylab="Voltage"))
 
 with(rows, plot(x=Datestamp,y=Global_reactive_power, type = "l", xlab="datetime", ylab="Global_reactive_power"))
 
 dev.off()
+
